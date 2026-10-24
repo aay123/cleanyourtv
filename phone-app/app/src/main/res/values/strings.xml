@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clean Your TV</string>
+
+    <string name="connect_subtitle">Turn a bloated Android TV into a clean one from your phone. Disable apps safely, install a launcher, and keep a backup you can restore.</string>
+    <string name="connect_card">Connect to the TV</string>
+    <string name="tv_ip">TV IP address</string>
+    <string name="port">ADB port</string>
+    <string name="connect">Connect</string>
+    <string name="connect_allow_hint">On the TV, turn on USB debugging (Developer options) and Network/ADB debugging, then accept \"Allow USB debugging\" when it appears.</string>
+
+    <string name="discover_card">Find TVs on this network</string>
+    <string name="discover">Search network</string>
+    <string name="discovering">Searching...</string>
+    <string name="discover_waiting">Looking for TVs advertising ADB. The phone and the TV must be on the same Wi-Fi.</string>
+    <string name="discovered">Found</string>
+    <string name="connect_endpoint">ADB</string>
+    <string name="pairing_endpoint">pairing</string>
+
+    <string name="show_pairing">Pair with a code</string>
+    <string name="hide_pairing">Hide pairing</string>
+    <string name="pair_help">Android 11 and newer: open Wireless debugging on the TV, tap \"Pair device with pairing code\", then enter the port and the 6-digit code here.</string>
+    <string name="pair_port">Pairing port</string>
+    <string name="pair_code">Pairing code</string>
+    <string name="pair_and_connect">Pair and connect</string>
+
+    <string name="show_help">How do I turn on ADB?</string>
+    <string name="hide_help">Hide help</string>
+    <string name="adb_help">1. Settings > About > tap Build 7 times.\n2. Developer options > USB debugging on.\n3. Developer options > Network/ADB debugging on (Android 11+).\n4. Keep the phone and the TV on the same Wi-Fi.\n5. If the TV asks, accept \"Allow USB debugging\".\n\nThe default port is 5555. Some TVs use a different one; the pairing dialog shows it.</string>
+
+    <string name="saved_backups">Saved backups</string>
+    <string name="no_backups">No backup yet. One is written before the first change, and can be restored from here.</string>
+    <string name="disabled_short">%1$d disabled</string>
+    <string name="restore">Restore</string>
+
+    <string name="back">Back</string>
+    <string name="device_card">This TV</string>
+    <string name="model">Model</string>
+    <string name="brand">Brand</string>
+    <string name="android">Android</string>
+    <string name="fire_tv_note">Fire TV: the launcher takeover is not supported. Cleaning and restoring still work.</string>
+
+    <string name="choose_list">Choose the list for this TV</string>
+    <string name="search_lists">Search by model, brand or Android version</string>
+    <string name="suggested_for_tv">Suggested for this TV</string>
+    <string name="no_match">No list matches. Try the model name or browse all lists.</string>
+    <string name="browse_all">Browse all %1$d lists</string>
+    <string name="packages_short">%1$d packages</string>
+    <string name="selected_list">Selected list</string>
+    <string name="change_list">Change list</string>
+    <string name="will_disable">Will disable</string>
+    <string name="will_skip">Skipped (safety rules or not installed)</string>
+    <string name="safety_check">Safety check</string>
+    <string name="show_skipped">Show skipped packages</string>
+    <string name="hide_skipped">Hide skipped packages</string>
+    <string name="current_home">Current Home app: %1$s</string>
+    <string name="cvte_hint">CVTE board: the stock launcher stays enabled unless this TV\'s example list disables it. Home is set with set-home-activity and checked after a reboot.</string>
+
+    <string name="launcher_card">Launcher (optional)</string>
+    <string name="launcher_help">Choose the launcher APK built from this project (launcher/app). It is installed and set as Home after the TV\'s stock launcher is confirmed working.</string>
+    <string name="choose_apk">Choose APK</string>
+    <string name="remove">Remove</string>
+    <string name="launcher_keep_hint">Keep the APK on the phone until the run finishes. Home is only switched after the new launcher answers.</string>
+
+    <string name="dns_card">Network (optional)</string>
+    <string name="dns_title">Private DNS (AdGuard)</string>
+    <string name="dns_help">Sets Private DNS to dns.adguard-dns.com. It blocks ads at the DNS level and is recorded in the backup so it can be restored.</string>
+
+    <string name="plan_summary">%1$d packages will be disabled, %2$d skipped</string>
+    <string name="start_clean">Start cleaning</string>
+    <string name="confirm_title">Start?</string>
+    <string name="confirm_body">The backup is written before the first change. Every disabled app can be restored from this phone.</string>
+    <string name="confirm_packages">Packages</string>
+    <string name="confirm_skipped">Skipped</string>
+    <string name="confirm_launcher">Launcher</string>
+    <string name="confirm_launcher_none">None (clean only)</string>
+    <string name="confirm_dns">Private DNS</string>
+    <string name="confirm_record">Keep the phone connected and the TV awake. Do not close the app while it runs.</string>
+    <string name="confirm_start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="run_title">Cleaning the TV</string>
+    <string name="run_keep_open">Keep this screen open and the TV awake. The run stops safely if the connection drops; the backup stays available.</string>
+    <string name="run_progress">%1$d of %2$d</string>
+
+    <string name="restore_title">Restoring the TV</string>
+    <string name="restore_keep_open">Keep this screen open and the TV awake until every app is back.</string>
+    <string name="restore_done_title">TV restored</string>
+    <string name="restore_done_body">The apps in the backup are enabled again. Reboot the TV, then check that Home and the remote still work.</string>
+    <string name="restore_summary">Restore result</string>
+    <string name="restore_summary_missing">The restore result is unavailable. Reconnect to the TV and restore again.</string>
+    <string name="restore_enabled">Enabled again</string>
+    <string name="restore_already">Already enabled</string>
+    <string name="restore_failed">Failed</string>
+    <string name="restore_home">Home restored</string>
+    <string name="restore_confirm_title">Restore this backup?</string>
+    <string name="restore_confirm_body">Every app this run disabled is enabled again. Apps that were already disabled before the run stay as they were.</string>
+
+    <string name="done_title">TV cleaned</string>
+    <string name="done_body">The apps are disabled. Reboot the TV and check Home, the remote and the inputs before closing ADB.</string>
+    <string name="done_summary">This run</string>
+    <string name="done_no_record">The backup could not be read. Check the TV state before doing anything else.</string>
+    <string name="done_tv">TV</string>
+    <string name="done_list">List</string>
+    <string name="done_disabled">Disabled</string>
+    <string name="done_skipped">Skipped</string>
+    <string name="done_failed">Failed</string>
+    <string name="done_recorded">Recorded</string>
+    <string name="done_unfinished">This run did not finish. The backup is still valid; restore it if the TV looks wrong.</string>
+    <string name="done_actions">Next</string>
+    <string name="export_backup">Export backup (.zip)</string>
+    <string name="restore_button">Restore this backup</string>
+    <string name="reboot_tv">Reboot the TV</string>
+    <string name="reboot_confirm">Reboot the TV now? Wait for it to come back, then reconnect and check Home and ADB.</string>
+    <string name="reboot_now">Reboot</string>
+    <string name="new_tv">Clean another TV</string>
+
+    <string name="close_adb_title">Before you finish</string>
+    <string name="close_adb_body">Turn off USB debugging and Network/ADB debugging on the TV, revoke USB debugging authorisations, and reboot. Port 5555 is unencrypted.</string>
+
+    <string name="show_failed">Show failed packages</string>
+    <string name="hide_failed">Hide failed packages</string>
+    <string name="show_details">Show details</string>
+    <string name="hide_details">Hide details</string>
+
+    <string name="working">Working</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="error_title">Something went wrong</string>
+    <string name="ok">OK</string>
+
+    <string name="toast_enter_ip">Enter the TV\'s IP address first.</string>
+    <string name="toast_pair_fields">Enter the TV IP, the pairing port and the 6-digit code.</string>
+    <string name="toast_connect_first">Connect to the TV first.</string>
+    <string name="toast_cannot_read_list">Cannot read this list.</string>
+    <string name="toast_no_run_export">No run to export yet.</string>
+    <string name="toast_backup_unreadable">That backup cannot be read.</string>
+    <string name="toast_connect_same_tv">Connect to the same TV before restoring.</string>
+    <string name="toast_backup_exported">Backup exported.</string>
+    <string name="toast_reboot_sent">Reboot sent. Wait for the TV, then reconnect and check Home and ADB.</string>
+
+    <string name="busy_connecting">Connecting. Accept the Allow USB debugging prompt on the TV.</string>
+    <string name="busy_pairing">Pairing with the TV. Keep the pairing dialog open.</string>
+    <string name="busy_checking">Checking %1$s against this TV.</string>
+    <string name="busy_reading_apk">Reading the APK.</string>
+    <string name="busy_writing_backup">Writing the backup.</string>
+    <string name="busy_rebooting">Rebooting the TV.</string>
+
+    <string name="error_not_apk">That file is not an Android APK.</string>
+    <string name="error_cannot_read_file">Cannot read the chosen file.</string>
+    <string name="error_timeout">Timed out. Check the IP and port, keep the TV awake, and accept the Allow USB debugging prompt.</string>
+    <string name="error_refused">The TV refused the connection. Turn on USB debugging (and Network/ADB debugging) first.</string>
+    <string name="error_auth">The TV did not authorise this phone. Accept the Allow USB debugging prompt on the TV, then retry.</string>
+    <string name="error_pair">Pairing failed. The pairing port changes every time the dialog opens; check the port and code.</string>
+</resources>
